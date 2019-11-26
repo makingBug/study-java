@@ -2,9 +2,9 @@ package zzy1day;
 
 public class Welcome {
 	public static void main(String[] args) {
-		Student s = new Student("makingBug",20,"coding");
-		System.out.println(s.toString());
+		String s = 19 +"18" + 19;
 		
+		System.out.println(s);
 	}
 }
 
