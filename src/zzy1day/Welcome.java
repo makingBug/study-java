@@ -12,16 +12,15 @@ class Person {
     String name;
     int height;
     public void rest(){
-        System.out.println("ĞİÏ¢Ò»»á£¡");
+        System.out.println("ä¼‘æ¯ä¸€ä¼š");
     }  
 }
 class Student extends Person {
-    String major; //×¨Òµ
+    String major; //
     public void study(){
-        System.out.println("Ñ§Ï°Java");
+        System.out.println("å­¦ä¹ java");
     }  
     public Student(String name,int height,String major) {
-        //ÌìÈ»ÓµÓĞ¸¸ÀàµÄÊôĞÔ
         this.name = name;
         this.height = height;
         this.major = major;
