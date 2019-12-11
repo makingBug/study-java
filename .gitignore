@@ -1,0 +1,7 @@
+# 忽略java类文件
+*.class
+
+.classpath
+.project
+
+.settings
