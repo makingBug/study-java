@@ -9,12 +9,14 @@ package MultiThreads;
 public class SynchronizedDemo implements Runnable {
     private static int count = 0;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
     	long t1 = System.currentTimeMillis();
     	SynchronizedDemo thread = new SynchronizedDemo();
         for (int i = 0; i < 10; i++) {
             new Thread(thread).start();
         }
+        
+        System.out.println(Thread.activeCount());
         while(Thread.activeCount() != 1);
         System.out.println("result: " + count);
         long t2 = System.currentTimeMillis();
